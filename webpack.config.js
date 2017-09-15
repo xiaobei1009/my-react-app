@@ -47,13 +47,16 @@ module.exports = {
 				}, {
 					loader: "less-loader" // compiles Less to CSS 
 				}]
-			}, {
+			}, 
+			/*
+			{
 				test: /\.svg/,
                 use: {
                     loader: 'svg-url-loader'
                 }
-			}, {
-				test: /\.(png|jpg|gif)$/,
+			},*/
+			{
+				test: /\.(png|jpg|gif|svg)$/,
 				use: [{
 					loader: 'url-loader',
 					options: {
